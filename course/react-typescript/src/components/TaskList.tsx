@@ -4,10 +4,9 @@ import { Task } from '../'
 
 type Props = {
   tasks: Task[];
-  setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
 }
 
-export const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
+export const TaskList: React.FC<Props> = ({ tasks }) => {
   const handleCheckBox = (
     e: React.ChangeEvent<HTMLInputElement>,
     i: number
